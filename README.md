@@ -1,6 +1,3 @@
-# UTS-Machine-Learning-kelompok-14
-UTS Machine Learning kelompok 14
-
 # UTS Machine Learning — Kelompok 14
 
 Repository ini berisi dokumentasi dan implementasi proyek Ujian Tengah Semester (UTS) mata kuliah Machine Learning Kelompok 14.
