@@ -8,7 +8,7 @@ Catatan pembagian peran, tautan Pull Request (PR) di repositori [UTS-Machine-Lea
 | :--- | :--- | :--- | :--- |
 | **Dwiki Diastoro** | [`dwikidias`](https://github.com/dwikidias) | Mengerjakan Tugas 1 Regresi (estimasi durasi kirim `P50` dan `P90`): audit kualitas data dan pembuangan fitur bocor (`jumlah_scan`), perbandingan *Time-Based Validation* dan *5-Fold CV*, *feature engineering* bebas kebocoran, pemodelan *Baseline*, *Ridge*, serta *Tuned LightGBM + CQR*, analisis error per segmen (`layanan`, `pulau_tujuan`, `mitra_kurir` `K07`), interpretasi SHAP, penataan folder `dataset/` dan `kode/`, serta penulisan laporan Bab I dan Bab II. | [PR #2](https://github.com/mohamadnurtaufiq/UTS-Machine-Learning-kelompok-14/pull/2), [PR #3](https://github.com/mohamadnurtaufiq/UTS-Machine-Learning-kelompok-14/pull/3), [PR #6](https://github.com/mohamadnurtaufiq/UTS-Machine-Learning-kelompok-14/pull/6), [PR #7](https://github.com/mohamadnurtaufiq/UTS-Machine-Learning-kelompok-14/pull/7) |
 | **Mohamad Nur Taufiq** | [`mohamadnurtaufiq`](https://github.com/mohamadnurtaufiq) | Mengerjakan Tugas 2 Klasifikasi (prediksi kategori/kelas target pada `02_classification.ipynb`): eksplorasi data (EDA) dan pemeriksaan distribusi kelas, pembersihan data serta penanganan *missing values* dan encoding fitur kategorikal, *feature engineering* dan pembagian data latih-uji (*train-test split* / validasi silang), perbandingan dan *hyperparameter tuning* beberapa model klasifikasi, evaluasi performa menggunakan metrik klasifikasi (*Accuracy*, *Precision*, *Recall*, *F1-Score*, *ROC-AUC*, dan *Confusion Matrix*), analisis *feature importance* serta error prediksi, ekspor file hasil prediksi klasifikasi, penulisan laporan bagian Tugas 2 Klasifikasi, serta pengelolaan repositori utama GitHub Kelompok 14 (*review* dan *merge* Pull Request). | [Commit f95cb53](https://github.com/mohamadnurtaufiq/UTS-Machine-Learning-kelompok-14/commit/f95cb53), [Commit ac8b3a1](https://github.com/mohamadnurtaufiq/UTS-Machine-Learning-kelompok-14/commit/ac8b3a1) |
-| **Irfan Rizky Maulana** | [`irfan060606`](https://github.com/irfan060606) | | |
+| **Irfan Rizky Maulana** | [`irfan060606`](https://github.com/irfan060606) | Mengerjakan Tugas 3 Clustering: pemeriksaan dan eksplorasi data, pemilihan fitur untuk pemodelan clustering, preprocessing data numerik dan kategorikal, transformasi fitur serta scaling, reduksi dimensi menggunakan PCA, pemodelan dan perbandingan algoritma K-Means, Gaussian Mixture Model (GMM), dan HDBSCAN, evaluasi hasil clustering menggunakan metrik yang sesuai, analisis profil cluster dan interpretasi karakteristik pelanggan, deteksi anomali berdasarkan jarak terhadap centroid, pengujian stabilitas clustering menggunakan Adjusted Rand Index (ARI), perbaikan error pada evaluasi Silhouette, penyesuaian mekanisme pemuatan dataset otomatis dari GitHub dengan alternatif file lokal/unggah manual, pengujian eksekusi notebook dari awal hingga akhir (*Run All*), serta pembuatan dan pemeriksaan file hasil clustering. | [Repositori Fork](https://github.com/irfan060606/UTS-Machine-Learning-kelompok-14) (Pull Request ke repositori utama: diisi setelah PR dibuat) |
 
 ## 2. Penggunaan Alat AI (*AI Tools Disclosure*)
 
@@ -34,7 +34,13 @@ Setiap keluaran AI diperiksa dan diuji ulang secara mandiri. Notebook `02_classi
 
 ### Irfan Rizky Maulana (Task 3: Clustering)
 
-Catatan alat AI, bagian yang dibantu, dan cara verifikasi akan diisi oleh anggota terkait.
+Pada bagian ini, alat AI yang dipakai adalah ChatGPT (OpenAI) untuk beberapa keperluan:
+1. Membantu penelaahan dan perbaikan kode Python pada notebook Clustering, termasuk *debugging* error pada evaluasi Silhouette dan penanganan sampel evaluasi yang tidak mencakup seluruh label cluster.
+2. Membantu meninjau preprocessing, pemilihan fitur, reduksi dimensi menggunakan PCA, serta implementasi dan evaluasi algoritma K-Means, Gaussian Mixture Model (GMM), dan HDBSCAN.
+3. Membantu menyesuaikan mekanisme pemuatan dataset otomatis dari repositori GitHub dengan alternatif file lokal atau unggahan manual, serta perbaikan bagian kode agar notebook dapat dijalankan secara menyeluruh.
+4. Membantu menyusun analisis hasil clustering, interpretasi profil cluster, evaluasi stabilitas menggunakan Adjusted Rand Index (ARI), dan dokumentasi hasil reproduksi notebook.
+
+Setiap keluaran AI diperiksa melalui eksekusi dan peninjauan hasil notebook. Notebook Clustering dijalankan dari awal hingga akhir (*Run All*) untuk memastikan seluruh sel kode dapat dieksekusi tanpa error. Pada pengujian yang dilakukan, seluruh 19 sel kode berhasil dijalankan. Hasil preprocessing, evaluasi clustering, distribusi anggota cluster, profil cluster, dan hasil deteksi anomali diperiksa berdasarkan keluaran aktual notebook. File hasil clustering, termasuk `cluster.csv`, juga diperiksa untuk memastikan berhasil dihasilkan. Pengujian pemuatan dataset menggunakan file lokal sebagai fallback dilakukan ketika koneksi GitHub mengalami kendala pada lingkungan pengujian.
 
 ## 3. Persetujuan Anggota Kelompok
 
@@ -42,4 +48,4 @@ Seluruh anggota menyatakan memahami isi pengerjaan dan siap menjelaskan serta me
 
 - [x] **Dwiki Diastoro** (`dwikidias`): Menyetujui
 - [x] **Mohamad Nur Taufiq** (`mohamadnurtaufiq`): Menyetujui
-- [ ] **Irfan Rizky Maulana** (`irfan060606`): Menunggu pengisian dan persetujuan
+- [x] **Irfan Rizky Maulana** (`irfan060606`): Menyetujui
